@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <title>Regras de estilização com SASS-SCSSS</title>
+</head>
+<body>
+    <div> <!-- Os dois paragrafos irão receber o estilo do sass -->
+        <p>Primeiro parágrafo</p>
+        <p>Segundo parágrafo</p>
+    </div>
+
+    <p>Terceiro parágrafo</p> <!-- Esse paragrafo não irá receber o estilo do sass pois não esta aninhado dentro da "div"  como no sass -->
+
+    <div> 
+        <p>Quarto parágrafo</p> <!-- Esse paragrafo irá receber o estilo do sass, pois esta aninhado dentro da "div"  como no sass-->
+    </div>
+
+    <main>
+        <h2>Título principal</h2>
+        <p class="p-vermelho">Testando parágrafo</p>
+        <p>Novo parágrafo</p>
+    </main>
+
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+
+    <a href="#">Clica em mim</a>
+    <div class="container">
+        <p class="container-content">Conteúdo 1</p>
+        <p class="container-content">Conteúdo 2</p>
+        <p class="container-content">Conteúdo 3</p>
+    </div>
+
+    <button class="btn">Botão</button>
+    <button class="btn btn-success">Botão</button>
+    <button class="btn btn-danger">Botão</button>
+
+    <h1 class="title">Este é um título</h1>
+    <h2 class="sub-title">Este é outro título</h2>
+
+    <div class="spacing">X</div>
+    <div class="spacing">X</div>
+    <div class="spacing">X</div>
+    
+</body>
+</html>

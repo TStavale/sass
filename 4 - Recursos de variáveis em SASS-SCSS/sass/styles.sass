@@ -1,0 +1,23 @@
+@import 'variables' 
+// Aqui eu estou importando o arquivo que contém as variáveis, nesse caso mesmo que o nome do arquivo tenha underline, não preciso colocar pois a prorpia aplicação entende que que é um arquivo parcial da aplicação.
+
+h1
+    color: $text-color // Aqui eu estou usando a variável declarada no escopo global que esta no outro arquivo.
+    border: $border
+
+p
+    color: $text-color
+    border: $border
+    font-size: $main-font
+    margin: #{$mx + 10px} // Aqui estamos interpolando o valor de $mx, declarado em uma variável em outro arquivo e importado para cá, somando a 10px.
+    padding: #{$px + $py} // Aqui estamos interpolando os valores de duas variáveis, declaradas em um outro arquivo e importadas para cá, somamos as duas variáveis.
+a 
+    color: $text-color
+
+div
+    p
+        $font-color: #fff // Esssa variável esta sendo declarada em um escopo local, apenas dentro desse parágrafo e por isso, só poderá ser usada ali dentro.
+        background-color: $bg-color
+        color: $font-color
+        $border: 3px dotted yellow // Aqui temos uma variável criada no escopo local com o mesmo nome da variável criada no escopo global, nesse caso estamos fazendo o que chamamos de shadowing, uma sombra da variável global para nesse caso poder utiliza-la com alteraçõe apenas nesse escopo local.
+        border: $border // utilizando a variável do escopo local.

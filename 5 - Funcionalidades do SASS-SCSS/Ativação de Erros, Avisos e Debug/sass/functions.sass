@@ -1,0 +1,34 @@
+@function text-color($size)
+
+    $color: #000
+
+    @if $size > 10
+        $color: red
+    @else 
+        $color: blue
+
+    @return $color
+
+@function custom-border-function($variation: 1)
+
+    $border: none
+    $var: 3
+
+    @if $variation > $var
+        // @error "Insira variações até o número 3"  - Criação e ativação de erros, caso alguém escreva algo errado.
+        @warn "O número máximo de variações é #{$var}" // Aqui temos o aviso, ao contrário do error, ele não trva a aplicação e nem aparece no navegador, apenas no terminal.
+
+    @if $variation == 1
+        $border: 1px solid red
+    @else if $variation == 2
+        $border: 2px solid green
+    @else
+        $border: 3px solid gold
+    
+    @return $border
+
+@function custom-width($width: 200px, $division: 2)
+
+    @debug "O valor da divisão é: #{$width / $division}"
+    
+    @return $width / $division

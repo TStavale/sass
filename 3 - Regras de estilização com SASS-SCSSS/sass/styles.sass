@@ -1,0 +1,87 @@
+div, main
+    background: #ddd
+
+    p, h2
+        color: blue
+
+
+main
+
+    .p-vermelho
+        color: red
+
+li
+    color: purple
+
+ol
+    > li // Aqui estamos usando um combinators ">" ele é um seletor de descendência, ou seja, nesse caso, ele informa que todos os filhos "li" de "ol", terão a cor azul. 
+        color: blue
+
+a
+    text-decoration: none
+    color: green
+    transition: .5s
+    padding: 10px
+    border: 1px solid green
+    display: block
+    width: 150px
+    text-align: center
+
+    &:hover // Aqui estamos usando o Parent selector "&" e com isso eu não preciso criar uma nova regra para utilizar o hover, pois ele irá se referir ao elemento pai.
+        background-color: green
+        color: white
+
+.container
+    background-color: #ccc
+    padding: 20px
+    margin: 20px
+
+    &-content // isso é como se fosse isso "container-content".
+        color: red
+
+.spacing
+    padding: 200px
+
+.btn
+    padding: 10px 20px
+    border: 1px solid blue
+    border-radius: 5px
+    color: #fff
+    background-color: blue
+    cursor: pointer
+    margin: 5px
+
+    &:hover
+        background-color: transparent
+        color: blue
+
+    &-success
+        background-color: green
+        border-color: green
+
+        &:hover
+            color: green
+
+    &-danger
+        background-color: red
+        border-color: red
+
+        &:hover
+            color: red
+
+%base-title-style // Aqui iremos utilizar o selector placehouder, para extender estilos a outros elementos, a sintaxe é essa "%nomequequeiracolcoar".
+    border-bottom: 2px dotted red
+    padding: 10px
+    background-color: yellow
+    text-align: center
+
+.title
+    font-size: 30px
+    color: green
+    @extend %base-title-style // Aqui através do placehouder, eu consigo utilizar um estilo geral para os dois.
+
+.sub-title
+    font-size: 25px
+    color: blue
+    @extend %base-title-style
+

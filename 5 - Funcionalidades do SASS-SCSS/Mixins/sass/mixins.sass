@@ -1,0 +1,25 @@
+@mixin special 
+    color: red
+    background-color: yellow
+    padding: 10px
+    border: 2px solid red
+
+    &:hover
+        border-color: blue 
+        color: blue
+
+@mixin green 
+    border-color: green 
+        color: green
+
+
+@mixin espacamento($p, $m) // Mixin com argumentos, onde $p, $m irão receber os valores passados lá no arquivo principal do projeto. 
+    padding: $p
+    margin: $m
+
+@mixin custom-border($style, $color, $width: 1px) // Mixin com argumentos e argumento opcional, onde $style, $color e $width são os argumentos e '1px" é o argumento opcional, eles recebem os valores passados lá no arquivo principal do projeto, porem nesse caso alem disso, temos o argumento opcional fixo que também será implementado junto. 
+    border: $width $style $color
+
+@mixin colors($font: #000, $background: #fff)
+    color: $font
+    background-color: $background

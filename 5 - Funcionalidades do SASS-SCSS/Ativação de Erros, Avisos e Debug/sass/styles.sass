@@ -1,0 +1,41 @@
+@charset "UTF-8"
+@import 'functions'
+
+
+body
+    margin: 20px
+
+.container-menor
+    width: 100px * 2
+    border: custom-border-function()
+
+
+$medida: 3
+
+.container-maior
+    width: 25rem * $medida
+    border: custom-border-function(2)
+
+.fonte-pequena
+    fonte-size: 5px
+    color: text-color(5)
+    border: custom-border-function(3)
+
+.fonte-grande
+    fonte-size: 25px
+    color: text-color(25)
+    border: custom-border-function(3)
+    
+.teste-1
+    width: custom-width() 
+    background-color: red  
+
+.teste-2
+    width: custom-width($width: 1000px) 
+    background-color: green 
+
+.teste-3
+    width: custom-width($division: 5) 
+    background-color: blue 
+    
+    

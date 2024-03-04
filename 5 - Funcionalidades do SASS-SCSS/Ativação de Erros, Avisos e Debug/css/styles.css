@@ -1,0 +1,42 @@
+body {
+  margin: 20px;
+}
+
+.container-menor {
+  width: 200px;
+  border: 1px solid red;
+}
+
+.container-maior {
+  width: 75rem;
+  border: 2px solid green;
+}
+
+.fonte-pequena {
+  fonte-size: 5px;
+  color: blue;
+  border: 3px solid gold;
+}
+
+.fonte-grande {
+  fonte-size: 25px;
+  color: red;
+  border: 3px solid gold;
+}
+
+.teste-1 {
+  width: 100px;
+  background-color: red;
+}
+
+.teste-2 {
+  width: 500px;
+  background-color: green;
+}
+
+.teste-3 {
+  width: 40px;
+  background-color: blue;
+}
+
+/*# sourceMappingURL=styles.css.map */
