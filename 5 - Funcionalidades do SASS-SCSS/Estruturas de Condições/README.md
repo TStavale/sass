@@ -56,6 +56,3 @@
             @else if $i == 3
                 color: teal
             background-color: #000
-    
-
-sass --watch sass/styles.sass:css/styles.css
