@@ -9,9 +9,24 @@
 
 ## Arquivo principal ##
 
-1 - O arquvivo principal vai <b>apenas realizar importações</b>, não vamos adicionar esstilos a ele; <br>
+1 - O arquvivo principal vai <b>apenas realizar importações</b>, não vamos adicionar esstilos a ele, isso irá <b>diminuir os imports</b> no nosso arquivo principal; <br>
 2 - Podemos chama-ló de <b>main.css</b> ou <b>app.sass</b>; <br>
 3 - As pastas de outros módulos iniciam com números, ex: <b>0-plugins</b>.
+
+## Estrutura de pastas ##
+
+1 - Estas são as pastas que vamos criar e também os significados de cada uma; <br>
+2 - <b>0-plugins</b>: Frameworks ou códigos de terceiros; <br>
+3 - <b>1-base</b>: Arquivo de estilo base; <br>
+4 - <b>2-layouts</b>: Arquivos para elementos que formam o layout da página; <br>
+5 - <b>3-modules</b>: Componentes das páginas.
+
+## Estilos de base ##
+
+1 - Podemos estilizar tags como: <b>body, a, p</b>; <br>
+2 - <b>Não utilizamos</b> classes nem id; <br>
+3 - A ideia é <b>pré-estilizar nosso HTML</b>; <br>
+4 - Podemos estilizar elementos em arquivos separados.
 
 
 sass --watch sass/main.sass:css/main.css
