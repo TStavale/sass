@@ -36,6 +36,8 @@
 
 ## Estilos de module ##
 
-1 - 
+1 - Aqui <b>podemos adicionar ids e classes</b> as regras também; <br>
+2 - Vamos colocar nossos <b>componentes menores</b>: cards, botões, algum elemento na sidebar; <br>
+3 - Podemos também separar cada um deles em um arquivo.
 
 sass --watch sass/main.sass:css/main.css
