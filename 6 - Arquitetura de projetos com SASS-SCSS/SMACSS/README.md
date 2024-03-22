@@ -28,5 +28,10 @@
 3 - A ideia é <b>pré-estilizar nosso HTML</b>; <br>
 4 - Podemos estilizar elementos em arquivos separados.
 
+## Estilos de layout ##
+
+1 - Aqui <b>podemos adicionar ids e classes</b> as regras; <br>
+2 - A ideia é estilizar componentes maiores, como o cabeçalho da página (header), main, seciton, aside , footer; <br>
+3 - Novamente podemos <b>separar elementos em arquivos distintos</b>.
 
 sass --watch sass/main.sass:css/main.css
