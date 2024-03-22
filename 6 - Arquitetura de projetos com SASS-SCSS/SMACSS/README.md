@@ -34,4 +34,8 @@
 2 - A ideia é estilizar componentes maiores, como o cabeçalho da página (header), main, seciton, aside , footer; <br>
 3 - Novamente podemos <b>separar elementos em arquivos distintos</b>.
 
+## Estilos de module ##
+
+1 - 
+
 sass --watch sass/main.sass:css/main.css
