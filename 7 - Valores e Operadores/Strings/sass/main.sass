@@ -1,0 +1,25 @@
+$str: "Roboto"
+$str2: Roboto
+
+@debug $str == $str2
+
+// posso criar uma fonte e depois fazer variações dela para usar como preferir.
+$nome-da-fonte: "Open"
+$var1: "Sans"
+$var2: "Teste"
+
+
+@debug $nome-da-fonte + " " + $var1
+@debug $nome-da-fonte + " " + $var2
+
+p
+    font-family: $nome-da-fonte + " " + $var1 // aqui estou concatenando elas.
+
+h1
+    font-family: "#{$nome-da-fonte} #{var2}" // aqui estou interpolando elas.
+
+$h: hidden
+
+h2
+    display: $h
+

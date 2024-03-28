@@ -1,0 +1,11 @@
+$list: 10, 20, 30
+
+@each $value in $list
+    @debug $value
+
+@each $value in $list
+    @debug $value + 10
+
+@each $font in $list
+    .p-#{$font}
+        font-size:$font + "px"
