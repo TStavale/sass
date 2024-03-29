@@ -1,0 +1,15 @@
+@use 'sass:string'
+
+$a: 1, 2, 3, 4, 5
+
+$frase: "O rato roeu a roupa do rei de Roma"
+
+@debug string.index($frase, 'rei')
+
+@debug string.length($frase)
+
+@debug string.to-lower-case($frase)
+@debug string.to-upper-case($frase)
+
+@debug string.unique-id() // Cria um id único que não se repete ao longo do nosso código.
+

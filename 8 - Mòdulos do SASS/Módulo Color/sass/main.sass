@@ -1,0 +1,38 @@
+@use 'sass:color'
+
+// Ajustando a cor, utilizando outra cores para isso.
+$color-adjust: color.adjust(#6B717F, $red: 25)
+$color-adjust-2: color.adjust(#6B717F, $red: 25, $blue: 110)
+
+.color-1
+    color: $color-adjust
+    background-color: $color-adjust-2
+
+// Verificando quanto de determinada cor tem uma cor especifica tem.
+@debug color.green($color-adjust)
+@debug color.blue($color-adjust-2)
+
+
+$color-scale: color.scale($color-adjust-2, $lightness: -40%)
+$color-scale-2: color.scale($color-adjust-2, $lightness: 40%)
+
+.color-2
+    background-color: $color-scale
+
+.color-3
+    background-color: $color-scale-2
+
+.color-4
+    background-color: color.invert($color-scale-2)
+
+.color-5
+    background-color: color.mix(#123123, #4f2f3f)
+
+.color-6
+    background-color: desaturate(#4f1f33, 60%) // Não utiliza o "color" antes do desaturate.
+
+.color-7
+    background-color: #4f1f33
+
+    &:hover
+        background-color: lighten(#4f1f33, 60%) // Não utiliza o "color" antes do desaturate.

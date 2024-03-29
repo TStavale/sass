@@ -1,0 +1,17 @@
+@use 'sass:math'
+
+$pi: math.$pi // valor de PI
+
+@debug $pi
+
+$z: 3.5
+
+@debug math.ceil($z) // arredonda o número para cima.
+@debug math.floor($z) // arredonda o número para baixo.
+
+$a: 1, 2, 3, 4, 5
+
+@debug math.max($a...) // Retorna o maior número da lista. Importante adcionar o operador Spread (...).
+@debug math.min($a...) // Retorna o maior número da lista. Importante adcionar o operador Spread (...).
+
+@debug math.random() // Retorna um número aleatorio entre 0 e 1.

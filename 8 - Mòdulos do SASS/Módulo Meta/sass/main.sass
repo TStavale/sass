@@ -1,0 +1,23 @@
+@use 'sass:meta'
+
+$a: 1, 2, 3, 4, 5
+
+@debug meta.global-variable-exists('a') // O nome da variável deve ser passada em string, entre parênteses.
+@debug meta.global-variable-exists('b')
+
+@debug meta.inspect($a) // inspeciona a variável e te devolve os valores nela contido.
+
+
+@mixin test 
+    margin: 0
+    padding: 0
+
+@debug meta.mixin-exists('test') // O nome da variável deve ser passada em string, entre parênteses.
+@debug meta.mixin-exists('test-2')
+
+// Verifica os tipos de dados passados como parâmetros
+@debug meta.type-of(2)
+@debug meta.type-of(('asd': 1))
+@debug meta.type-of($a)
+@debug meta.type-of('Nome')
+@debug meta.type-of(#FFF)

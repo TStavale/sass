@@ -1,0 +1,37 @@
+@use 'sass:list'
+
+$lista:10px, 20px, 30px
+
+@debug $lista
+
+$lista: list.append($lista, 40px) // adicionando os "40px" a lista.
+
+@debug $lista
+
+@debug list.index($lista, 10px) // Saber em qual index está determinado item.
+
+
+@if list.index($lista, 10px) == 1 // Posso utilizar o index em uma condicional.
+    $lista: list.append($lista, 50px)
+
+
+@debug $lista
+
+
+$lista-2: 60px, 70px, 80px, 90px, 100px
+
+$lista-3: list.join($lista, $lista-2) // Unindo duas listas, no caso lista com lista-2.
+
+@debug $lista-3
+
+@debug list.length($lista) // Verificando a quantidade de elementos em uma lista.
+@debug list.length($lista-3)
+
+@debug list.nth($lista-3, 3) // Verificar qual elemento esta na posição determinada, é basicamente um index ao contrário.
+@debug list.nth($lista-3, 6)
+
+$font-size-title: list.nth($lista-3, 4) // Exemplo de utilização do "nth".
+@debug $font-size-title
+
+h1
+    font-size: $font-size-title
